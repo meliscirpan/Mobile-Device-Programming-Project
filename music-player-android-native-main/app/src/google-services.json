@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "609238660406",
+    "project_id": "musicappplayer-df470",
+    "storage_bucket": "musicappplayer-df470.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609238660406:android:0372ed0c1d3db319032f97",
+        "android_client_info": {
+          "package_name": "com.example.mobileproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9qCUzK-2MvxgdvZiyklmGU4SWf2WIxY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

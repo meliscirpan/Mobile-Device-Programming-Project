@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_container"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/registerbg"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:ignore="HardcodedText"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image_picker"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="@android:dimen/thumbnail_height"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/surname_register"
+                android:background="@mipmap/default_avatar_2"
+                >
+            </ImageView>
+
+            <EditText
+                android:theme="@android:style/Widget.DeviceDefault.Light.EditText"
+                android:id="@+id/name_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="24dp"
+                android:hint="@string/name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:shadowColor="@color/white"
+                android:textColorLink="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                android:imeActionLabel="@string/name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/surname_register"/>
+
+            <EditText
+                android:theme="@android:style/Widget.DeviceDefault.Light.EditText"
+                android:id="@+id/surname_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="24dp"
+                android:hint="@string/surname"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:shadowColor="@color/white"
+                android:textColorLink="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:imeActionLabel="@string/surname"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_register" />
+
+            <EditText
+                android:theme="@android:style/Widget.DeviceDefault.Light.EditText"
+                android:id="@+id/phone_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="24dp"
+                android:hint="@string/phone"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:shadowColor="@color/white"
+                android:textColorLink="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:imeActionLabel="@string/phone"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/surname_register" />
+
+            <EditText
+                android:theme="@android:style/Widget.DeviceDefault.Light.EditText"
+                android:id="@+id/email_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="24dp"
+                android:hint="@string/prompt_email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:shadowColor="@color/white"
+                android:textColorLink="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:imeActionLabel="@string/prompt_email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone_register" />
+
+            <EditText
+                android:theme="@android:style/Widget.DeviceDefault.Light.EditText"
+                android:id="@+id/password_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="24dp"
+                android:hint="@string/prompt_password"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:shadowColor="@color/white"
+                android:textColorLink="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:imeActionLabel="@string/prompt_password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_register" />
+
+            <EditText
+                android:theme="@android:style/Widget.DeviceDefault.Light.EditText"
+                android:id="@+id/password_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="24dp"
+                android:hint="@string/password_again"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:shadowColor="@color/white"
+                android:textColorLink="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:imeActionLabel="@string/password_again"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_register" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_again"
+                android:layout_marginLeft="140dp"
+                android:text="Kayıt Ol"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

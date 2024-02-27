@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Music Player</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Şifre</string>
+    <string name="action_sign_in">Giriş yap veya kayıt ol</string>
+    <string name="action_sign_in_short">Giriş Yap</string>
+    <string name="welcome">"Hoşgeldiniz !"</string>
+    <string name="invalid_username">Kullanılamaz kullanıcı adı</string>
+    <string name="invalid_password">Şifre en az 5 karakterli olmalı</string>
+    <string name="login_failed">"Giriş başarısız !"</string>
+    <string name="name">"İsim"</string>
+    <string name="surname">"Soy isim"</string>
+    <string name="phone">"Telefon Numarası"</string>
+    <string name="password_again">"Şifre tekrar"</string>
+    <string name="image">"Kullanıcı resimleri"</string>
+    <string name="playlist_name">Çalma listesi adını girin</string>
+</resources>
